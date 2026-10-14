@@ -1,0 +1,14 @@
+# Eclipse build output
+/bin/
+
+# Generated data and reports (created each time the programs run)
+products.txt
+salesmen.txt
+sales_*.txt
+*.ser
+salesmen_report.csv
+products_report.csv
+
+# OS files
+.DS_Store
+Thumbs.db

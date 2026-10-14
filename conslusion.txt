@@ -1,0 +1,55 @@
+CONCLUSION DEL PROYECTO - GENERACION Y CLASIFICACION DE DATOS
+Modulo: Conceptos Fundamentales de Programacion - Politecnico Grancolombiano
+
+
+1. LO APRENDIDO DURANTE EL DESARROLLO DEL PROYECTO
+
+- Lectura y escritura de archivos planos en Java con BufferedReader y
+  BufferedWriter, y la importancia de cerrar los recursos con
+  try-with-resources.
+- Generacion de datos pseudoaleatorios coherentes con la clase Random, usando
+  listas de nombres reales y reglas simples para que los archivos de
+  vendedores, productos y ventas se relacionen entre si.
+- Uso de colecciones (List y Map) para acumular totales y de comparadores
+  para ordenar resultados de mayor a menor.
+- Diseno orientado a objetos basico: clases modelo inmutables (Product y
+  Salesman) y metodos pequenos con una sola responsabilidad.
+- Validacion de datos: detectar lineas mal formadas, ids de producto
+  inexistentes y cantidades negativas sin detener el programa.
+- Serializacion de objetos para guardar y recuperar datos en archivos binarios
+  (.ser).
+- Documentacion con Javadoc y trabajo con un repositorio publico en GitHub
+  dentro de un proyecto de Eclipse con Java 8.
+
+
+2. POSIBLES APLICACIONES EN LA VIDA PROFESIONAL
+
+- Procesamiento de reportes de ventas, inventarios o facturacion a partir de
+  archivos planos (CSV), algo muy comun en integraciones entre sistemas.
+- Generacion de datos de prueba para validar aplicaciones moviles y servicios
+  antes de contar con datos reales.
+- Validacion y limpieza de datos de entrada, necesaria en cualquier aplicacion
+  que reciba informacion de usuarios o de otros sistemas.
+- Persistencia local de datos (por ejemplo, guardar el estado de una
+  aplicacion movil) y organizacion del codigo en clases reutilizables.
+- Uso de control de versiones y documentacion tecnica en el trabajo en
+  equipo.
+
+
+3. DIFICULTADES PRESENTADAS DURANTE EL DESARROLLO
+
+- Interpretar algunos puntos del enunciado que admitian mas de una lectura:
+  el nombre de la segunda clase ("main" en minuscula, que no sigue la
+  convencion habitual de Java) y el formato exacto de los reportes (que
+  campos debe llevar cada linea).
+- Mantener la coherencia entre archivos: los ids de producto de las ventas
+  deben existir en el catalogo y el documento de cada vendedor debe estar en
+  el archivo de vendedores.
+- Evitar datos viejos: al volver a ejecutar el generador quedaban archivos de
+  ventas de vendedores anteriores, por lo que se agrego una limpieza previa.
+- Formato de los numeros decimales: segun la configuracion regional se
+  generaba coma en lugar de punto, por lo que se fijo el formato con
+  Locale.US.
+- Organizar el repositorio de GitHub: al subir las carpetas quedaron
+  anidadas de mas y hubo que corregir la estructura para que el proyecto de
+  Eclipse quedara en la raiz.
